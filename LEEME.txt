@@ -1,0 +1,27 @@
+ALMA STUDIO - primera versión PWA
+
+Incluye:
+- Rutinas semanales de fuerza y Pilates.
+- Sesión guiada paso a paso.
+- Registro de ejercicios completados.
+- Registro local de peso y cintura.
+- Iconos y configuración PWA.
+- Caché básica para abrir la interfaz sin conexión tras la primera carga.
+
+PUBLICAR GRATIS CON GITHUB PAGES
+1. Entra a https://github.com/ y crea una cuenta o inicia sesión.
+2. Crea un repositorio nuevo llamado alma-studio. Para hacerlo público y usar GitHub Pages gratis, selecciona Public.
+3. En el repositorio, pulsa Add file > Upload files.
+4. Sube los archivos y la carpeta icons de este ZIP, no subas el ZIP como un único archivo.
+5. Pulsa Commit changes.
+6. Abre Settings > Pages.
+7. En Build and deployment, selecciona Deploy from a branch.
+8. Selecciona la rama main y la carpeta /(root), luego Save.
+9. Espera a que GitHub Pages publique el sitio. La dirección suele ser https://TU-USUARIO.github.io/alma-studio/
+10. Abre esa dirección en Chrome desde tu Android. En el menú ⋮, pulsa Instalar aplicación o Añadir a pantalla de inicio.
+
+Notas:
+- Si el repositorio se llama distinto, GitHub Pages usa una ruta distinta; los enlaces relativos de esta app están preparados para funcionar desde una subcarpeta.
+- Los datos se guardan localmente en el navegador del dispositivo. No se sincronizan entre dispositivos ni se respaldan en una cuenta.
+- La interfaz no sustituye la guía de un instructor para aprender la técnica del reformer.
+- Esta app no se publica automáticamente. Debes completar los pasos de GitHub Pages.

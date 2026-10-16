@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#34483d">
+<meta name="description" content="Rutinas de fuerza y Pilates reformer, con seguimiento de progreso.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+<title>ALMA STUDIO</title>
+</head>
+<body>
+<header class="hero">
+  <div class="brandrow"><div><p class="eyebrow">TU ESPACIO DE BIENESTAR</p><h1>alma studio</h1><p class="tagline">Muévete con intención.</p></div><div class="brandmark">✿</div></div>
+  <div class="hero-art"><div class="sun"></div><div class="reformer"><div class="rail"></div><div class="bed"></div><div class="leg l1"></div><div class="leg l2"></div><div class="strap"></div></div><div class="plant">♧</div></div>
+  <p class="goal">FUERZA <span>·</span> CONTROL <span>·</span> PROGRESO</p>
+</header>
+<nav class="tabs" aria-label="Secciones">
+  <button class="tab active" data-view="plan">Mi plan</button>
+  <button class="tab" data-view="session">Sesión guiada</button>
+  <button class="tab" data-view="progress">Mi progreso</button>
+</nav>
+<main>
+<section id="view-plan" class="view">
+  <div class="section-heading"><div><p class="eyebrow green">TU SEMANA</p><h2>Elige tu entrenamiento</h2></div></div>
+  <div id="days" class="days"></div>
+  <article class="workout-card">
+    <div class="workout-top"><div><p id="workout-type" class="eyebrow green"></p><h2 id="workout-name"></h2><p id="workout-level" class="muted"></p></div><div id="workout-symbol" class="symbol">✿</div></div>
+    <div class="meta"><span>◷ <b id="workout-time"></b></span><span id="exercise-count"></span></div>
+    <div class="progress-track"><div id="day-progress" class="progress-fill"></div></div>
+    <div id="exercise-list" class="exercise-list"></div>
+    <button id="start-session" class="primary">Comenzar sesión guiada</button>
+  </article>
+  <p class="small-note">Ajusta cargas y movimientos a tu nivel. En reformer, utiliza resistencias y posiciones que domines con seguridad.</p>
+</section>
+<section id="view-session" class="view hidden">
+  <p class="eyebrow green">ENTRENAMIENTO GUIADO</p><h2 id="session-title">Tu sesión</h2>
+  <article class="session-card">
+    <div class="session-illustration" id="session-art"><span>✿</span></div>
+    <p id="session-step" class="eyebrow green"></p><h2 id="session-exercise"></h2><p id="session-dose" class="dose"></p>
+    <p id="session-tip" class="muted">Haz cada repetición con control. Descansa según lo necesites.</p>
+    <div class="session-actions"><button id="prev-exercise" class="secondary">Anterior</button><button id="next-exercise" class="primary">Siguiente</button></div>
+  </article>
+  <button id="back-plan" class="text-button">← Volver a mi plan</button>
+</section>
+<section id="view-progress" class="view hidden">
+  <p class="eyebrow green">TU CONSTANCIA</p><h2>Tu progreso</h2>
+  <article class="progress-card"><p class="muted">Días completados esta semana</p><div class="big-number"><span id="completed-days">0</span><small> de 7</small></div><div class="progress-track"><div id="week-progress" class="progress-fill"></div></div><p id="week-message" class="muted"></p></article>
+  <article class="form-card"><h3>Registro corporal</h3><label for="weight">Peso (kg)</label><input id="weight" type="number" inputmode="decimal" step="0.1" placeholder="Ej. 55">
+  <label for="waist">Cintura (cm), opcional</label><input id="waist" type="number" inputmode="decimal" step="0.1" placeholder="Ej. 70">
+  <button id="save-measures" class="primary">Guardar medidas</button><p id="save-message" class="muted" aria-live="polite"></p></article>
+  <article class="progress-card"><h3>Sesiones registradas</h3><ul id="completed-list" class="completed-list"></ul><button id="reset-week" class="secondary">Reiniciar semana</button></article>
+  <p class="small-note">Los datos se guardan en este navegador de este dispositivo. Si borras los datos del navegador o cambias de dispositivo, podrías perderlos.</p>
+</section>
+</main>
+<footer>ALMA STUDIO · MUÉVETE A TU RITMO</footer>
+<script src="app.js"></script>
+</body></html>
